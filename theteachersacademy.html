@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Teachers Academy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/procss.css">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			/* Get iframe src attribute value i.e. YouTube video url
+			and store it in a variable */
+			var url = $("#jolp").attr('src');
+
+			/* Assign empty url value to the iframe src attribute when
+			modal hide, which stop the video playing */
+			$("#myModal").on('hide.bs.modal', function () {
+				$("#jolp").attr('src', '');
+			});
+
+			/* Assign the initially stored url back to the iframe src
+			attribute when modal is displayed again */
+			$("#myModal").on('show.bs.modal', function () {
+				$("#jolp").attr('src', url);
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<header id="h--2" class="container-fluid header--2">
+		<div class="row justify-content-between p-0">
+			<div class="col">
+				<a href="#" onclick="window.open('theteachersacademy.html','_self')">
+					<img class="img-fluid" src="images/m1.png" width="150px;" height="150px">
+				</a>
+			</div>
+			<div id="c-m-2" class="curtain-menu-2">
+				<a href="javascript:void(0)" class="clsbtn-1" onclick="close_curtain_menu2()">&times;</a>
+				<div class="curtain-menu-2-content">
+					<a href="#" onclick="window.open('tta-about.html','_self')">About</a><br><br>
+					<a href="#" onclick="window.open('tta-learn.html','_self')">Learn</a><br><br>
+					<a href="#" onclick="window.open('tta-getinvolved.html','_self')">Get Involved</a><br><br>
+					<a href="#" onclick="window.open('tta-resources.html','_self')">Resources</a><br><br>
+					<a href="#" onclick="window.open('tta-buy.html','_self')">Buy</a><br><br>
+				</div>
+			</div>
+			<div class="col text-right p-4">
+				<a class="btn-1" onclick="open_curtain_menu2()">&#9776;</a><br>
+				<button class="btn-2" style="margin-top: 10px;">Sign In</button>
+			</div>
+		</div>
+	</header>
+
+	<div id="tta1" class="container-fluid pt-5 c1">
+		<div class="row justify-content-center"
+			style="background-image: url(images/bg-4.jpg); background-size: cover; height: 545px;">
+			<div class="col- text-center align-self-start">
+				<h2>Nurturing Educator In You,</h2>
+				<h2>Unlock The Imagination</h2>
+				<h2>To Shape The Better World !</h2>
+			</div>
+			<div class="col-12 p-5 align-self-end">
+				<div class="row justify-content-center">
+					<div class="col-md-5 text-center">
+						<button class="btn1">Learn ➔</button>
+					</div>
+					<div class="col-md-5 text-center">
+						<button class="btn1">Get Involved ➔</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="tta2" class="container-fluid p-5">
+		<div class="row justify-content-center pb-4">
+			<div class="col-12 text-center">
+				<h3>Innovation And Investment For The Next Generation...</h3>
+			</div>
+			<div class="col-12 p-5 text-center">
+				<img class="img-fluid" src="images/i8.png" height="500px"><br>
+			</div>
+			<div class="col-12 text-center">
+				<button class="btn2">Test Yourself</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="tta3" class="container-fluid p-5">
+		<div class="row">
+			<div class="col-md-6 text-center">
+				<h1>Lorem, ipsum dolor.</h1>
+				<hr class="n5">
+			</div>
+			<div class="col-md-6 text-center">
+				<h1>Lorem, ipsum dolor.</h1>
+				<hr class="n5">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 text-center">
+				<h1>Lorem, ipsum dolor.</h1>
+				<hr class="n5">
+			</div>
+			<div class="col-md-6 text-center">
+				<h1>Lorem, ipsum dolor.</h1>
+				<hr class="n5">
+			</div>
+		</div>
+	</div>
+
+	<footer id="tta4" class="container-fluid p-5">
+		<div class="row justify-content-center">
+			<div class="col- text-center ts-1">
+				<a href="#" class="m-5" onclick="window.open('tta-about.html','_self')">About</a>
+			</div>
+			<div class="col- text-center ts-1">
+				<a href="#" class="m-5" onclick="window.open('tta-learn.html','_self')">Learn</a>
+			</div>
+			<div class="col- text-center ts-1">
+				<a href="#" class="m-5" onclick="window.open('tta-getinvolved.html','_self')">Get Involved</a>
+			</div>
+			<div class="col- text-center ts-1">
+				<a href="#" class="m-5" onclick="window.open('tta-resources.html','_self')">Resources</a>
+			</div>
+			<div class="col- text-center ts-1">
+				<a href="#" class="m-5" onclick="window.open('tta-buy.html','_self')">Buy</a>
+			</div>
+		</div>
+		<div class="row justify-content-center p-5">
+			<div class="col- text-center">
+				<a href="#" onclick="window.open('index.html','_self')">
+					<img class="img-fluid" src="images/l1.png" width="180px;">
+				</a><br>
+				<h6>The Teachers Academy is an initiative of PROACTIVE 'I'</h6>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col- text-center">
+				<div class="social-icons-1">
+					<a href="#" class="social-icon-1"><i class="fa fa-facebook"></i></a>
+					<a href="#" class="social-icon-1"><i class="fa fa-instagram"></i></a>
+					<a href="#" class="social-icon-1"><i class="fa fa-linkedin"></i></a>
+					<a href="#" class="social-icon-1"><i class="fa fa-youtube"></i></a><br>
+					<a href="#" onclick="window.open('tta-contactus.html','_self')"><h5>C o n t a c t&emsp;Us</h5></a>
+				</div>
+			</div>
+		</div>
+		&copy; The Teachers Academy 
+		<button onclick="jumptop()" class="btn-3">ˆ</button>
+	</footer>
+
+	<script src="js/projs.js"></script>
+
+</body>
+
+</html>

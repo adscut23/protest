@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Teachers Academy - About</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/procss.css">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			/* Get iframe src attribute value i.e. YouTube video url
+			and store it in a variable */
+			var url = $("#jolp").attr('src');
+
+			/* Assign empty url value to the iframe src attribute when
+			modal hide, which stop the video playing */
+			$("#myModal").on('hide.bs.modal', function () {
+				$("#jolp").attr('src', '');
+			});
+
+			/* Assign the initially stored url back to the iframe src
+			attribute when modal is displayed again */
+			$("#myModal").on('show.bs.modal', function () {
+				$("#jolp").attr('src', url);
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<header id="h--2" class="container-fluid header--2">
+		<div class="row justify-content-between p-0">
+			<div class="col">
+				<a href="#" onclick="window.open('theteachersacademy.html','_self')">
+					<img class="img-fluid" src="images/m1.png" width="150px;" height="150px">
+				</a>
+			</div>
+			<div id="c-m-2" class="curtain-menu-2">
+				<a href="javascript:void(0)" class="clsbtn-1" onclick="close_curtain_menu2()">&times;</a>
+				<div class="curtain-menu-2-content">
+					<a href="#" onclick="window.open('tta-about.html','_self')">About</a><br><br>
+					<a href="#" onclick="window.open('tta-learn.html','_self')">Learn</a><br><br>
+					<a href="#" onclick="window.open('tta-getinvolved.html','_self')">Get Involved</a><br><br>
+					<a href="#" onclick="window.open('tta-resources.html','_self')">Resources</a><br><br>
+					<a href="#" onclick="window.open('tta-buy.html','_self')">Buy</a><br><br>
+				</div>
+			</div>
+			<div class="col text-right p-4">
+				<a class="btn-1" onclick="open_curtain_menu2()">&#9776;</a><br>
+				<button class="btn-2" style="margin-top: 10px;">Sign In</button>
+			</div>
+		</div>
+	</header>
+
+	<div id="tta-a1" class="container-fluid">
+		<div class="row justify-content-center"
+			style="background-image: url(images/bg-5.jpg); background-size: cover; height: 545px;">
+			<div class="col- align-self-end display-4 p-3 text-center" style="background-color: #ffc900;">
+				Vision & Mission
+			</div>
+		</div>
+	</div>
+
+	<div id="tta-a2" class="container-fluid p-5">
+		<div class="row justify-content-center">
+			<div class="col- text-justify">
+				As teachers our core job is to help students to develop skills,
+				create positive behaviours and innovate. With this in mind teachers
+				academy is created with the vision to enable each teacher to become
+				a world class educator.
+
+				As a true patriotic of the Nation I owe this country the responsibility
+				to nurture world class teachers so that we can be rest assured for the
+				future we are creating for the next & many more generations.
+
+				Teachers Academy’s vision is to empower teachers to be the catalyst of
+				positive change maker in the society. Our world is at the mercy of great
+				teachers and Teachers Academy is their go to place to ignite the spark
+				of creativity.<br><br>
+
+				We co-create with teachers that can exponentially increase teachers ability
+				so that each lesson students learn becomes a life transforming lesson for
+				them. We believe that if teachers see themselves as not teachers nut
+				experience designers there be next level of engagement in the classrooms.
+				And classrooms as theatres.
+
+				Like all greatest teachers who have inspired the world. We want to demystify
+				the skillset, mindset, environment set & tools and give access to every
+				teachers so that they are able to imagine what they want to create and help
+				them create that.
+			</div>
+		</div>
+	</div>
+
+	<div id="tta-a3" class="container-fluid p-5">
+		<div class="row justify-content-around">
+			<div class="col-md-4 text-justify p-4">
+				<center>
+					<img class="img-fluid tta-a-imgfrm-1" src="images/i9.jpg" width="150px" height="150px"><br>
+				</center>
+				<p>
+					<center><a class="tta-a-btn-1" onclick="openrm1()" id="ormBtn1">
+							<h2>Inspire</h2>
+						</a></center>
+					<span id="dot1"></span><span id="more1">
+						Inspire how do we see the role of a teacher in the fourth industrial
+						revolution where 3D printing, robotics, nanotechnology, Quantum computing,
+						Artificial intelligence, Robotics, 5th generation wireless technology,
+						Autonomous vehicle and decentralized systems all taking shape.
+
+						How do we see the role of a teacher in such an advancement?
+
+						the teacher Academy intend's to inspire and create the new
+						metaphor for the 21st century teacher. It intends to transition
+						the role of a teacher not just about teaching subjects and
+						evaluating exams but as a true Pioneer in transforming a life
+						of a student and making them into an amazing life.
+
+						If you look at the history of the most beautiful teachers
+						that ever walked on the planet like Maria Montessori, Aristotle,
+						William McAfee,and slbm Jamie alyson's Edward p**** and many
+						many more we would see that each of them had a certain skill set,
+						mindset, environment set and tools that they invented and empowered
+						and gave it to the world. The teacher Academy intense to inspire
+						each one of us rather the entire humanity towards better education
+						and better possibilities.
+
+						If you want to build the nation we want to build our educators. Our
+						teacher have the onus to pass the batton of regeneration, creativity
+						and empowerment for the next generation. What Teachers Academy intends
+						to do is transforming skill set, mind set,environment set, and tools
+						into a powerhouse of transformation which is ever evolving and making
+						this earth more positive place to live.
+					</span>
+				</p>
+			</div>
+			<div class="col-md-4 text-justify p-4">
+				<center>
+					<img class="img-fluid tta-a-imgfrm-1" src="images/i10.jpg" width="150px" height="150px"><br>
+				</center>
+				<p>
+					<center><a class="tta-a-btn-1" onclick="openrm2()" id="ormBtn2">
+							<h2>Co-create</h2>
+						</a></center>
+					<span id="dot2"></span><span id="more2">
+						The Teachers Academy intend's to shake hands with each one who are
+						willing to co create the future that is around the development of
+						skillsets, mindsets, environmentset & tools.
+
+						We are committed to create an ecosystem of co-creation which is
+						beyond the boundaries of any institution any country.
+
+						Basically seeing the entire planet as one and co-creating massively
+						with each individual across the globe.
+
+						We are here to partner with you and to make our shared dreams come
+						true let's go creative. Let's co-create.
+					</span>
+				</p>
+			</div>
+			<div class="col-md-4 text-justify p-4">
+				<center>
+					<img class="img-fluid tta-a-imgfrm-1" src="images/i11.jpg" width="150px" height="150px"><br>
+				</center>
+				<p>
+					<center><a class="tta-a-btn-1" onclick="openrm3()" id="ormBtn3">
+							<h2>Transform</h2>
+						</a></center>
+					<span id="dot3"></span><span id="more3">
+						Transformation is a journey of not possible to possible.
+
+						The Teacher Academy is constantly discovering the gaps
+						that are crying for Innovation.
+
+						To transform the abilities of teachers and students to enable
+						them to make happen what they thought not possible.
+
+						We are committed to innovation for ever evolving journey of h
+						elping students achieve their highest potential.
+
+						We no longer see teachers as teachers but as an experienced
+						designers we don't see classrooms as classrooms but as theatres.
+						Imagine a world of Campus is being transformed into an highly
+						engaging system where every community members are getting to
+						achieve excellence and fulfill thier highest potential.
+					</span>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="tta-a4" class="container-fluid p-5">
+		<div class="row">
+			<div class="col-md-6 text-justify align-self-center">
+				<center>
+					<h2>The Teachers Essential</h2>
+				</center><br>
+				If teachers start to look at themselves not as teachers
+				but as experience designer they would do much better.
+
+				varun Chamadiya
+
+				The teacher academy intends to empower every teacher
+				with the skillset, mindset and tools to be albe to design
+				the content and syllabus as an experience that will be
+				most memorable, wonderful and outstabding in terms of
+				learning outcomes achieved and 10X engagement.
+
+				Our research and with the help of extensive observation
+				and interviews with Institutions that are engaged in Teachers
+				training and many schools and universities, we ahave been able
+				to discover the blind spots that are hidden from the view of
+				teachers. we believe once teachers are introduced to the entire
+				framework and tools of experience design teachers will be able
+				to do justice to thier profession and help the next generation
+				acheive thier full potential.
+			</div>
+			<div class="col-md-6 p-5">
+				<img class="img-fluid tta-a-imgfrm-2" src="images/si4.jpg">
+			</div>
+		</div>
+	</div>
+
+	<div id="tta-a5" class="container-fluid p-5">
+		<div class="row justify-content-center">
+			<div class="col-">
+				<center>
+					<h2>The Work We Do</h2>
+					<h5><i>Investing In The Next Generation</i></h5>
+				</center><br>
+				<ul id="list">
+					<li>&emsp;Transforming Teachers & Institutions</li><br>
+					<li>&emsp;Knowledge Sharing & Creation</li><br>
+					<li>&emsp;Changing Behaviour</li><br>
+					<li>&emsp;Innovation System & Products</li><br>
+					<li>&emsp;Gamifing & Designing Spaces & Environments</li><br>
+					<li>&emsp;Educational Consulting</li><br>
+					<li>&emsp;Summer Institute</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="tta-a6" class="container-fluid pt-5">
+		<center>
+			<h1>Leadership & Council</h1>
+		</center><br><br>
+		<div class="row justify-content-center">
+			<div class="col text-center">
+				<img class="tta-a-imgfrm-3" src="images/i12.jpg" width="300px" height="200px">
+				<h3>Lorem, ipsum.</h3>
+				<h5>lorem</h5>
+				<br>
+			</div>
+			<div class="col text-center">
+				<img class="tta-a-imgfrm-3" src="images/i12.jpg" width="300px" height="200px">
+				<h3>Lorem, ipsum.</h3>
+				<h5>lorem</h5>
+				<br>
+			</div>
+			<div class="col text-center">
+				<img class="tta-a-imgfrm-3" src="images/i12.jpg" width="300px" height="200px">
+				<h3>Lorem, ipsum.</h3>
+				<h5>lorem</h5>
+				<br>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col text-center">
+				<img class="tta-a-imgfrm-3" src="images/i12.jpg" width="300px" height="200px">
+				<h3>Lorem, ipsum.</h3>
+				<h5>lorem</h5>
+				<br>
+			</div>
+			<div class="col text-center">
+				<img class="tta-a-imgfrm-3" src="images/i12.jpg" width="300px" height="200px">
+				<h3>Lorem, ipsum.</h3>
+				<h5>lorem</h5>
+				<br>
+			</div>
+			<div class="col text-center">
+				<img class="tta-a-imgfrm-3" src="images/i12.jpg" width="300px" height="200px">
+				<h3>Lorem, ipsum.</h3>
+				<h5>lorem</h5>
+				<br>
+			</div>
+		</div>
+	</div>
+
+
+	<footer id="tta4" class="container-fluid p-5">
+		<div class="row justify-content-center">
+			<div class="col- text-center ts-1">
+				<a href="#" class="m-5" onclick="window.open('tta-about.html','_self')">About</a>
+			</div>
+			<div class="col- text-center ts-1">
+				<a href="#" class="m-5" onclick="window.open('tta-learn.html','_self')">Learn</a>
+			</div>
+			<div class="col- text-center ts-1">
+				<a href="#" class="m-5" onclick="window.open('tta-getinvolved.html','_self')">Get Involved</a>
+			</div>
+			<div class="col- text-center ts-1">
+				<a href="#" class="m-5" onclick="window.open('tta-resources.html','_self')">Resources</a>
+			</div>
+			<div class="col- text-center ts-1">
+				<a href="#" class="m-5" onclick="window.open('tta-buy.html','_self')">Buy</a>
+			</div>
+		</div>
+		<div class="row justify-content-center p-5">
+			<div class="col- text-center">
+				<a href="#" onclick="window.open('index.html','_self')">
+					<img class="img-fluid" src="images/l1.png" width="180px;">
+				</a><br>
+				<h6>The Teachers Academy is an initiative of PROACTIVE 'I'</h6>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col- text-center">
+				<div class="social-icons-1">
+					<a href="#" class="social-icon-1"><i class="fa fa-facebook"></i></a>
+					<a href="#" class="social-icon-1"><i class="fa fa-instagram"></i></a>
+					<a href="#" class="social-icon-1"><i class="fa fa-linkedin"></i></a>
+					<a href="#" class="social-icon-1"><i class="fa fa-youtube"></i></a><br>
+					<a href="#" onclick="window.open('tta-contactus.html','_self')"><h5>C o n t a c t&emsp;Us</h5></a>
+				</div>
+			</div>
+		</div>
+		&copy; The Teachers Academy 
+		<button onclick="jumptop()" class="btn-3">ˆ</button>
+	</footer>
+
+	<script src="js/projs.js"></script>
+
+</body>
+
+</html>

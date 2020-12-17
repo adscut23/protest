@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Proactive 'I' Labs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/procss.css">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			/* Get iframe src attribute value i.e. YouTube video url
+			and store it in a variable */
+			var url = $("#jolp").attr('src');
+
+			/* Assign empty url value to the iframe src attribute when
+			modal hide, which stop the video playing */
+			$("#myModal").on('hide.bs.modal', function () {
+				$("#jolp").attr('src', '');
+			});
+
+			/* Assign the initially stored url back to the iframe src
+			attribute when modal is displayed again */
+			$("#myModal").on('show.bs.modal', function () {
+				$("#jolp").attr('src', url);
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<header id="h--1" class="container-fluid header--1">
+		<div class="row">
+			<div class="col p-2">
+				<a href="#" onclick="window.open('index.html','_self')">
+					<img class="img-fluid" src="images/l1.png" width="250px;" alt="">
+				</a>
+			</div>
+			<div id="c-m-1" class="curtain-menu-1">
+				<a href="javascript:void(0)" class="clsbtn--1" onclick="close_curtain_menu1()">&times;</a>
+				<div class="curtain-menu-1-content">
+					<a href="#" onclick="window.open('about.html','_self')">About</a><br><br>
+					<a href="#" onclick="window.open('whatwedo.html','_self')">What We Do</a><br><br>
+					<a href="#" onclick="window.open('resources.html','_self')">Resources</a><br><br>
+					<a href="#" onclick="window.open('contactus.html','_self')">Contact</a><br><br>
+				</div>
+			</div>
+			<div class="col-1 p-4 ml-5 pr-5">
+				<a class="btn--1" onclick="open_curtain_menu1()">&#9776;</a>
+			</div>
+		</div>
+	</header>
+
+	<div id="hc1" class="container-fluid c1">
+		<div class="row align-content-md-center" style="height: 540px;">
+			<div class="col-md-6 pl-5" style=" font-size:60px;">
+				<div class="row justify-content-center">
+					<div>
+						<a>Education</a><br>
+						<a>Platforms</a><br>
+						<a>Innovations</a><br>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 pt-4">
+				<div class="row justify-content-center pb-5">
+					<div class="vl--l">
+						<p>
+							Proactive 'I' is an education</br>
+							& innovation company.</br>
+							We create values for</br>
+							human's fullest potential</br>
+							by design.
+						</p>
+						<p class="fde1">
+							Be the
+							<a href="#" style="text-decoration: none; color: grey;">
+								<b>Life-Preneure</b><sup class="sm1">TM</sup>
+							</a>
+						</p>
+						<button class="btn--2" onclick=" window.open('gettheaccess.html','_self')">
+							<b>Get The Access</b></br>
+							<a class="arrow1 down1"></a>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="hc2" class="container-fluid">
+		<center>
+			<div class="row justify-content-center pt-5">
+				<img class="img-fluid" src="images/i1.png" width="70%" alt="">
+			</div>
+		</center>
+		<div class="row justify-content-center pb-5">
+			<center>
+				<p class="fde2" style="border: 3px solid white;">
+					Journey of
+					<a href="#" style="text-decoration: none; color: #009fff;">
+						<b>Life-Preneure</b><sup class="sm2">TM</sup>
+						<button href="#" class="btn--3" alt="video" data-toggle="modal" data-target="#myModal">
+							<i class="fa fa-play"></i>
+						</button>
+						<div id="myModal" class="modal fade">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title">Journey of Life-Preneure</h5>
+										<button type="button" class="close" style="font-size: 30px;"
+											data-dismiss="modal">&times;
+										</button>
+									</div>
+									<div class="modal-body">
+										<div class="embed-responsive embed-responsive-16by9">
+											<iframe id="jolp" class="embed-responsive-item" width="727" height="409"
+												src="https://www.youtube.com/embed/ex9hU8u4L64" frameborder="0" allow="accelerometer; autoplay; 
+												clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+											</iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</p>
+			</center>
+		</div>
+	</div>
+
+	<div id="hc3" class="container-fluid p-5">
+		<div class="row align-content-md-center">
+			<div class="col-md-6 p-5">
+				<img class="img-fluid" src="images/si1.jpg" height="650px">
+			</div>
+			<div class="col-md-6 align-self-center text-center">
+				<h3>CUMMUNICATION MAESTRO</br>VIRTUAL!</h3>
+				<h5>
+					Join us for Vaurn's first ever Virtual
+					Cummunication Mastery Experience<br><br>
+					NOV 20-23
+				</h5></br>
+				<button class="btn--4" onclick=" window.open('reserveyourspot.html','_self')">Reserve Spot Now</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="hc4" class="container-fluid">
+		<div class="row justify-content-center p-4">
+			<div class="col-md-1">
+				<center>Listen</center>
+			</div>
+			<div class="col-md-1">
+				<center>Read</center>
+			</div>
+			<div class="col-md-1">
+				<center>Think</center>
+			</div>
+			<div class="col-md-1">
+				<center>Watch</center>
+			</div>
+			<div class="col-md-1">
+				<center>Learn</center>
+			</div>
+			<div class="col-md-1">
+				<center>Co-create</center>
+			</div>
+			<div class="col-md-1">
+				<center>Experiment</center>
+			</div>
+		</div>
+	</div>
+
+	<div id="hc5" class="container-fluid" style="background-image: url(images/bg1.jpg);">
+		<div class="row offset-md-1 p-5">
+			<div class="col-auto shadow p-5" style="background-color: white;">
+				<a style="color: grey">Education : Business Essentials</a>
+				<h1>Visual Thinking</h1>
+				<hr class="n1">
+				<br><br>
+				<p>More than 80 percent neurons human being<br>posses are visual neurons. Visual thinking<br>helps
+					individual and Organisations to get<br>clarity, communicate to point and fun.</p>
+				<br>
+				<hr class="n2">
+				<br>
+				<button href="#" class="btn--5">Learn</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="hc6" class="container-fluid pt-3 pb-3">
+		<div class="row justify-content-around pb-5">
+			<div class="col-auto pt-5 p-0" style="border-bottom: 1px solid grey;">
+				<div class="img-hover-zoom cont123">
+					<a href="#"><img class="img-fluid" src="images/i2.jpg" height="250px"></a>
+				</div>
+				<br>
+				<p style="color: grey">Education : Students Essentials</p>
+				<a href="#" class="gfg">Dreams & Action</a>
+				<p><b>Learn : Design The Life You Love</b></p>
+			</div>
+			<div class="col-auto pt-5 p-0" style="border-bottom: 1px solid grey;">
+				<div class="img-hover-zoom cont123">
+					<a href="#"><img class="img-fluid" src="images/i3.jpg" height="250px"></a>
+				</div>
+				<br>
+				<p style="color: grey">Education : Teachers Essentials</p>
+				<a href="#" class="gfg">10x Engagement</a>
+				<p><b>Learn : Become Experienced Designer For Your<br>Student</b></p>
+			</div>
+			<div class="col-auto pt-5 p-0" style="border-bottom: 1px solid grey;">
+				<div class="img-hover-zoom cont123">
+					<a href="#"><img class="img-fluid" src="images/i4.jpg" height="250px"></a>
+				</div>
+				<br>
+				<p style="color: grey">Education : Family Essentials</p>
+				<a href="#" class="gfg">Cummunication Maestro</a>
+				<p><b>Learn : Create Better Results and Better<br>Relationship in the Family</b></p>
+			</div>
+		</div>
+	</div>
+
+	<div id="hc7" class="container-fluid pt-3 pb-3" style="background-image: url(images/bg2.jpg);">
+		<div class="row offset-md-1 p-5">
+			<div class="col-auto shadow p-5" style="background-color: white;">
+				<a style="color: grey">Platform : Uzoo Labs</a>
+				<h1>Note Book Innovation</h1>
+				<hr class="n1">
+				<br><br>
+				<p>Notebook that inspire & accelerate for your<br>extraordinory potential.</p>
+				<br>
+				<hr class="n2">
+				<br>
+				<button href="#" class="btn--5">Read</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="hc8" class="container-fluid pt-4 pb-4">
+		<div class="row justify-content-around pb-5">
+			<div class="col-auto pt-5 p-0" style="border-bottom: 1px solid grey;">
+				<div class="img-hover-zoom cont123">
+					<a href="#"><img src="images/i5.jpg" width="350px" height="250px"></a>
+				</div>
+				<br>
+				<p style="color: grey">Innovation : Uzoo Labs</p>
+				<a href="#" class="gfg">Self University</a>
+				<p><b>Read : kjgajsdkgasdk jhvasdjhgvasd khjgsad</b></p>
+			</div>
+			<div class="col-auto pt-5 p-0" style="border-bottom: 1px solid grey;">
+				<div class="img-hover-zoom cont123">
+					<a href="#"><img src="images/i6.jpg" width="350px" height="250px"></a>
+				</div>
+				<br>
+				<p style="color: grey">Platform : 1000 Businesses</p>
+				<a href="#" class="gfg">AD's CUT Production</a>
+				<p><b>Case Study : Makeing Dream Business<br>Successful</b></p>
+			</div>
+		</div>
+	</div>
+
+	<div id="hc9" class="container-fluid">
+		<div class="row justify-content-around pt-5">
+			<div class="col-md-4 pt-5 pb-5">
+				<a style="color: grey;">Case Study</a><br>
+				<a href="#" class="btn--6" style="font-size: 25px;">The Now Clock Innovation</a><br><br>
+				<a style="color: grey;">2 mins. to read</a><br>
+				<hr class="n3">
+			</div>
+			<div class="col-md-4 pt-5 pb-5">
+				<a style="color: grey;">Tool</a><br>
+				<a href="#" class="btn--6" style="font-size: 25px;">Organizer : Daily Calendar</a><br><br>
+				<a style="color: grey;">Experiment</a><br>
+				<hr class="n3">
+			</div>
+		</div>
+		<div class="row justify-content-around pb-5">
+			<div class="col-md-4 pt-5 pb-5">
+				<a style="color: grey;">Co-create</a><br>
+				<a href="#" class="btn--6" style="font-size: 25px;">Redesign Academic Books Through<br>Visual
+					Thinking</a><br><br>
+				<a style="color: grey;">Get Involved</a><br>
+				<hr class="n3">
+			</div>
+			<div class="col-md-4 pt-5 pb-5">
+				<a style="color: grey;">Innovation Web Series</a><br>
+				<a href="#" class="btn--6" style="font-size: 25px;">7yr old kid Invented Board<br>Game</a><br><br>
+				<a style="color: grey;">Watch</a><br>
+				<hr class="n3">
+			</div>
+		</div>
+	</div>
+
+	<div id="hc10" class="container-fluid pt-5 pb-5">
+		<div class="row justify-content-around pt-5 pb-5">
+			<div class="col-auto pt-5 pb-5">
+				<center>
+					<p><b>Want to join our team?</b></p>
+					</br>
+					<p>Are you looking to tackle some of the</br>bigest challenges facing buisness and</br>society? Join
+						our
+						team of designers,</br>developers, and storytellers</p>
+					<button class="btn--7a" onclick=" window.open('careerwithus.html','_self')">Career with us</button>
+				</center>
+			</div>
+			<div class="col-auto pt-5 pb-5">
+				<center>
+					<p><b>Want to partner with PROACTIVE 'I' ?</b></p>
+					</br>
+					<p>We work with organisations seeking</br>growth, influence, and agility to design</br>and build the
+						next generation of products,</br>services, and experiences</p>
+					<button class="btn--7b" onclick=" window.open('contactus.html','_self')">Contact us</button>
+				</center>
+			</div>
+		</div>
+	</div>
+
+	<footer id="hc11" class="container-fluid">
+		<div class="row justify-content-around p-5">
+			<div class="col-auto p-0 pt-5">
+				<center>
+					<h5 style="color:black; font-size: 15px;">Education</h5>
+					<p>( anyone anywhere )</p>
+					<div class="newspaper1">
+						<a onclick=" window.open('accesscourses.html','_self')"><b>Students Essential</b></a><br>
+						<a onclick=" window.open('theteachersacademy.html','_self')"><b>Teachers Essential</b></a><br>
+						<a onclick=" window.open('uzoolabs.html','_self')"><b>Corporates Essential</b></a><br>
+						<a onclick=" window.open('dfamilyschool.html','_self')"><b>Families Essential</b></a><br><br>
+					</div>
+				</center>
+			</div>
+			<div class="col-auto p-0 pt-5">
+				<center>
+					<h5 style="color:black; font-size: 15px;">Platforms</h5>
+					<p>( explore opportunities&nbsp;-&nbsp;express potential )</p>
+					<div class="newspaper">
+						<a onclick=" window.open('theteachersacademy.html','_self')"><b>The Teachers
+								Acedamy</b></a></br>
+						<a onclick=" window.open('1000business.html','_self')"><b>1000 Business</b></a></br>
+						<a onclick=" window.open('4e.html','_self')"><b>4th Environment</b></a></br>
+						<a onclick=" window.open('uzoolabs.html','_self')"><b>Uzoo Labs & II</b></a></br>
+						<a onclick=" window.open('soulify.html','_self')"><b>Solify</b></a></br>
+						<a onclick=" window.open('dfamilyschool.html','_self')"><b>D Family School</b></a></br>
+						<a onclick=" window.open('divineconnect.html','_self')"><b>Divine Connect</b></a></br>
+						<a onclick=" window.open('farmtofork.html','_self')"><b>Farm To Fork</b></a></br>
+						<a onclick=" window.open('investibank.html','_self')"><b>InvestiBank</b></a></br>
+						<a onclick=" window.open('communityimpact.html','_self')"><b>Community Impact</b></a></br>
+					</div>
+				</center>
+			</div>
+			<div class="col-auto p-0 pt-5">
+				<center>
+					<h5 style="color:black; font-size: 15px;">Innovations</h5>
+					<p>( creation & imagination to the future )</p>
+					<div class="newspaper1">
+						<a onclick=" window.open('accesscourses.html','_self')"><b>Students Essential</b></a><br>
+						<a onclick=" window.open('theteachersacademy.html','_self')"><b>Teachers Essential</b></a><br>
+						<a onclick=" window.open('uzoolabs.html','_self')"><b>Corporates Essential</b></a><br>
+						<a onclick=" window.open('dfamilyschool.html','_self')"><b>Families
+								Essential</b></a><br><br><br>
+					</div>
+					<h5 style="color: black; font-size: 15px;">Our Brands</h5>
+					<div class="newspaper1">
+						<a onclick=" window.open('soulify.html','_self')"><b>Soulify</b></a><br>
+					</div>
+				</center>
+			</div>
+			<div class="col-aotu p-0 pt-5">
+				<center>
+					<h5 style="font-size: 15px;">Career</h5>
+					<p style="font-size: 16px;">Lets work together<br>Co-Existene for Excellence</p>
+					<button class="btn--8" onclick=" window.open('careerwithus.html','_self')">Explore Jobs</button>
+					</br></br><br>
+					<h7 style="font-size: 16px;">Proactive 'I'</br>Education & Innovation Company<br>Pvt Ltd. Uzoo
+						Innovation Labs<br>SATNA, INDIA Pin - 485001</h7>
+				</center>
+			</div>
+		</div>
+		<hr class="n4">
+		<div class="row justify-content-around pt-2 pb-4">
+			<div class="col-auto">
+				<div class="social-icons">
+					<center>
+						<a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a>
+						<a href="#" class="social-icon"> <i class="fa fa-instagram"></i></a>
+						<a href="#" class="social-icon"> <i class="fa fa-linkedin"></i></a>
+						<a href="#" class="social-icon"> <i class="fa fa-youtube"></i></a>
+					</center>
+				</div>
+			</div>
+			<div class="col-auto p-0">
+				<div class="chota p-2">
+					<center>
+						<a href="#" style="color: white;"><b>Terms of Services</b></a>&emsp;|&emsp;
+						<a href="#" style="color: white;"><b>Privacy Policy</b></a><br>
+						<a href="#" style="color: white;"><b>Copyright & IP Policy</b></a>&emsp;|&emsp;
+						<a href="#" style="color: white;"><b>Do Not Sell My Personal Information</b></a><br><br>
+						<a>&copy;2020 - Proactive 'I'</a>
+					</center>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/projs.js"></script>
+
+</body>
+
+</html>
